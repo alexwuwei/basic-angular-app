@@ -1,0 +1,23 @@
+{
+  "name": "basic-angular-app",
+  "version": "1.0.0",
+  "description": "a simple angular app, using webpack and also express for the backend.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexwuwei/basic-angular-app.git"
+  },
+  "author": "Hugo A Guerra <guerrahugoa@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexwuwei/basic-angular-app/issues"
+  },
+  "homepage": "https://github.com/alexwuwei/basic-angular-app#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

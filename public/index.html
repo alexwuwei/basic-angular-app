@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./public/css/main.css" charset="utf-8">
+    <title>Basic Angular App</title>
+  </head>
+  <body ng-controller="TabController as panel">
+    {{'hello'}}
+    <header>
+      <nav>
+        <ul>
+          <li ng-click="panel.setTab('home')" ng-class="{currentTab: panel.isActive('home')}">Home</li>
+          <li ng-click="panel.setTab('about')" ng-class="{currentTAb: panel.isActive('about')}">About</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="home" ng-show="panel.isActive('home')">
+
+    <h1></h1>
+    <p>
+
+    </p>
+  </section>
+  <section ng-controller="TabController as aboutPanel" class="about" ng-show="panel.isActive('about')" ng-init="name = 'santa claus'">
+
+  <h1>Hello {{name}}, and welcome! </h1>
+  <input ng-model="name">
+  <button ng-click"aboutPanel.clearName"></button>
+
+</section>
+
+  <script type="text/javascript" src="bundle.js" charset="UTF-8">
+
+  </script>
+  <script type="text/javascript" src="/../bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="./public/js/app.js"></script>
+  </body>
+</html>
