@@ -1,5 +1,10 @@
+body ul {
+  list-style-type: none;
+  font-family: sans-serif;
+}
 .currentTab {
-  border: solid
+  border: solid 1px black;
+  padding: 3px;
 }
 
 .home {
@@ -7,5 +12,11 @@
 }
 
 .about {
-  
+
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
